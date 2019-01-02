@@ -1,8 +1,24 @@
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+
+html {
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
 }
 
+body {
+
+    background-color: #fff;
+    border-top: solid 10px #000;
+    color: #333;
+
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    min-height: 75%;
+}
+/*This was all preset*/
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -40,3 +56,5 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+
+/*Ok this is my work...*/
