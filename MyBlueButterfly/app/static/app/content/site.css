@@ -58,3 +58,13 @@ input[type="checkbox"].input-validation-error {
 }
 
 /*Ok this is my work...*/
+
+#navbar-colors  li a {
+    color: #15a0a4;
+
+}
+
+#navbar-colors li a:hover {
+    color: #800080;
+    text-decoration: underline;
+}
