@@ -13,7 +13,7 @@
 <body>
             <header>
             <div class="content-wrapper">
-                <div  style="width: 45%; display:block; margin-left:auto; margin-right:auto; margin-bottom:6px">
+                <div  id="logo">
                     <a href="{% url 'home' %}"><img src="../../static/app/images/Title.png" alt="Well this worked yesterday..." class="mx-auto d-block"></a>
                 </div>
                 
@@ -46,8 +46,9 @@
     </div>
 
     <div class="container body-content">
-{% block content %}{% endblock %}
-        <hr/>
+        <div class="main-body-content">
+                {% block content %}{% endblock %}
+        </div>        <hr/>
         <footer>
             <p>&copy; {{ year }} - My Blue Butterfly</p>
         </footer>

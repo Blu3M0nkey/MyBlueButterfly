@@ -3,6 +3,7 @@ html {
     background-color: #e2e2e2;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -16,7 +17,7 @@ body {
     padding: 0;
     padding-top: 50px;
     padding-bottom: 20px;
-    min-height: 75%;
+    min-height: 25%;
 }
 /*This was all preset*/
 /* Set padding to keep content from hitting the edges */
@@ -67,4 +68,24 @@ input[type="checkbox"].input-validation-error {
 #navbar-colors li a:hover {
     color: #800080;
     text-decoration: underline;
+}
+
+#logo {
+    width:auto\9;
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+
+
+}/* not happy with this...
+     need to work on the min hieght of the body
+      to reflect both mobile and web views..
+     RN its too short
+ */
+.body-content{
+    
+}
+
+.main-body-content {
+    height:auto;
 }
