@@ -5,25 +5,23 @@ Definition of urls for MyBlueButterfly.
 from datetime import datetime
 from django.conf.urls import url
 import django.contrib.auth.views
+from django.contrib import admin
 
-import app.forms
-import app.views
+import Main.forms
+import Main.views
 
 # Uncomment the next lines to enable the admin:
-# from django.conf.urls import include
-# from django.contrib import admin
-# admin.autodiscover()
+from django.conf.urls import include
 
 urlpatterns = [
     # Examples:
-    url(r'^$', app.views.home, name='home'),
-    url(r'^contact$', app.views.contact, name='contact'),
-    url(r'^about$', app.views.about, name='about'),
+    url(r'^', include('Main.urls')),
+   
     url(r'^login/$',
         django.contrib.auth.views.login,
         {
-            'template_name': 'app/login.html',
-            'authentication_form': app.forms.BootstrapAuthenticationForm,
+            'template_name': 'login.html',
+            'authentication_form': Main.forms.BootstrapAuthenticationForm,
             'extra_context':
             {
                 'title': 'Log in',
@@ -42,5 +40,5 @@ urlpatterns = [
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
 ]

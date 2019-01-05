@@ -1,0 +1,91 @@
+
+html {
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+
+    background-color: #fff;
+    border-top: solid 10px #000;
+    color: #333;
+
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    min-height: 25%;
+}
+/*This was all preset*/
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*Ok this is my work...*/
+
+#navbar-colors  li a {
+    color: #15a0a4;
+
+}
+
+#navbar-colors li a:hover {
+    color: #800080;
+    text-decoration: underline;
+}
+
+#logo {
+    width:auto\9;
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+
+
+}/* not happy with this...
+     need to work on the min hieght of the body
+      to reflect both mobile and web views..
+     RN its too short
+ */
+.body-content{
+    
+}
+
+.main-body-content {
+    height:auto;
+}
